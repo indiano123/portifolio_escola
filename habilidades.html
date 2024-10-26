@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="habilidades.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="trilho" id="trilho">
+        <div class="indicador"></div>
+    </div>
+    <h1>
+        HABILIDADES
+    </h1>
+    <nav>
+        <ul>
+            <a href="pagina_inicial.html"><li>VOLTAR</li></a>
+            
+        </ul>
+    </nav>
+    <section class="items">
+        <div class="item">
+             <P>Habilidades: Conhecimento basico em HTML,CSS e JAVA SCRIPT,
+
+                Conhecimento basico em CSHARP E PYTHON</P> 
+            
+        </div>
+        
+        
+    </section>
+    <footer>
+        <a href="https://github.com/indiano123" target="_blank" rel="noopener noreferrer">
+           <img src="./img/github.svg"></img>
+           <p>Github</p>
+        </a>
+        <a href="https://www.linkedin.com/in/bernardo-carvalho-744ab1301/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/linkedin.svg"></img>
+            <p>Linkedin</p>
+         </a>
+         
+    </footer>
+    <H1>contato:999921518</H1>
+</div>
+<script>
+
+    document.onclick = function(e){
+        let x = e.pageX;
+        let y = e.pageY;
+
+        let span = document.createElement("span");
+        span.classList.add("click_effect");
+        span.style.top = y + "px";
+        span.style.left = x + "px";
+        document.body.appendChild(span);
+
+        setTimeout(() => {
+            span.remove();
+        }, 600);
+
+    }
+
+</script>
+<script src="habilidades.js"></script>
+</body>
+</html>

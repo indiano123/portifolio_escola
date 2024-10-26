@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="pagina_inicial.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina inicial</title>
+</head>
+<body>
+    
+    <div class="trilho" id="trilho">
+        <div class="indicador"></div>
+    </div>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="habilidades.html"><h1>HABILIDADES</h1></a>
+                </li>
+                <li>
+                    <a href="projetos.html"><H1>PROJETOS</H1></a>
+                </li>
+                <li>
+                    <a href="contato.html"><H1>CONTATO</H1></a>
+                </li>
+            </ul>
+        </nav>
+    
+        <header>
+            <div class="center">
+                <img src="./img/Logotipo delicado monograma feminino bege e branco 1.png"></img>
+            </div>
+            <h1>BernardoCarvalho</h1>
+            <h1>Técnico em Informatica</h1>
+            
+        </header>
+        <main>
+            <section>
+                <h1>Sobre mim</h1>
+                <h1>
+                    Sou um tecnico em informatica que busca mais conhecimento na area de software e na area de hardware.
+                    Sonho em ter minha propria empresa de hardware e expandir meus negocios,gosto mais da area de hardware e tenho um 
+                    sonho de um dia chegar no nivel das empresas como Pichau,Kabum e Terabyte.
+    
+                </h1>
+            </section>
+        </main>
+    
+        <footer>
+            <a href="https://github.com/indiano123" target="_blank" rel="noopener noreferrer">
+               <img src="./img/github.svg"></img>
+               <p>Github</p>
+            </a>
+            <a href="https://www.linkedin.com/in/bernardo-carvalho-744ab1301/" target="_blank" rel="noopener noreferrer">
+                <img src="./img/linkedin.svg"></img>
+                <p>Linkedin</p>
+             </a>
+             
+        </footer>
+        <H1>contato:999921518</H1>
+    </div>
+    <script>
+
+        document.onclick = function(e){
+            let x = e.pageX;
+            let y = e.pageY;
+    
+            let span = document.createElement("span");
+            span.classList.add("click_effect");
+            span.style.top = y + "px";
+            span.style.left = x + "px";
+            document.body.appendChild(span);
+    
+            setTimeout(() => {
+                span.remove();
+            }, 600);
+    
+        }
+    
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
